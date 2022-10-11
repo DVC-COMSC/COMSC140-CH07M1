@@ -1,18 +1,10 @@
-import numpy as np
-import matplotlib.pyplot as plt
+words = input().split()
+keyword = input()
 
-Math = [100, 90]
-English = [90, 80]
-Physics = [80, 80]
-Computer = [80, 90]
-x = np.arange(2) 
-width = 0.2
-labels = ['Math', 'English', 'Physics', 'Computer']
-names = ['Bill', 'Mary']
+for i in range(len(words)):
+	for j in range(len(keyword)):
+		if keyword[j] in words[i]:
+			print (words[i], end=' ')
+			break
 
-# ******************************
-# Make your code
-# ******************************
-
-
-fig.savefig('A11.png')
+print ()
